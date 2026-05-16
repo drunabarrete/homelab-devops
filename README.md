@@ -1,4 +1,3 @@
-# homelab-devops
 # DevOps Homelab
 
 This repo documents the homelab environment I’m building on a Lenovo ThinkCentre M920s running Proxmox VE.
@@ -9,7 +8,7 @@ I started this lab to move beyond tutorials and actually build, break, troublesh
 
 ---
 
-## Current Hardware
+Current Hardware
 
 * Lenovo ThinkCentre M920s
 * 16GB DDR4 RAM
@@ -19,7 +18,7 @@ I started this lab to move beyond tutorials and actually build, break, troublesh
 
 ---
 
-## Current Progress
+Current Progress
 
 * Installed Proxmox VE
 * Enabled VT-x / VT-d in BIOS
@@ -30,7 +29,7 @@ I started this lab to move beyond tutorials and actually build, break, troublesh
 
 ---
 
-## Planned Services
+Planned Services
 
 * GitLab CE
 * GitLab Runner
@@ -42,7 +41,7 @@ I started this lab to move beyond tutorials and actually build, break, troublesh
 
 ---
 
-## What I’m Learning
+What I’m Learning
 
 * Linux system administration
 * Virtualization and hypervisors
@@ -55,7 +54,7 @@ I started this lab to move beyond tutorials and actually build, break, troublesh
 
 ---
 
-## Notes
+Notes
 
 This repo will continue evolving as I expand the lab and document the issues, fixes, architecture decisions, and deployment steps along the way.
 
