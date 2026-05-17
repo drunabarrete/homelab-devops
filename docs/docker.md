@@ -86,7 +86,9 @@ Inside the container:
 apt update && apt upgrade -y
 ```
 
-The upgrade process paused at one point waiting for package configuration input, but continued normally afterward.
+After all packages were properly upgraded via the proxmox host shell, I was able to access dockerlab's shell from its own console.<img width="1244" height="110" alt="Screenshot 2026-05-16 193251" src="https://github.com/user-attachments/assets/6c8a450c-72e9-4ca2-acf6-3cf5c149d5c1" />
+<img width="1198" height="69" alt="Screenshot 2026-05-16 193306" src="https://github.com/user-attachments/assets/83c7f06d-e520-40a4-b709-545f977a7c5a" />
+
 
 ---
 
