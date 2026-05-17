@@ -191,8 +191,8 @@ services:
 
 This stack deploys:
 
-*An Nginx web server
-*A lightweight container that displays networking and request information for testing
+* An Nginx web server
+* A lightweight container that displays networking and request information for testing
 
 Deploying the Stack
 
