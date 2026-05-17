@@ -198,11 +198,15 @@ Deploying the Stack
 
 Started the containers with:
 
+```bash
 docker compose up -d
+```
 
 Verified containers were running:
 
+```bash
 docker ps
+```
 
 <img width="1198" height="69" alt="Screenshot 2026-05-16 193306" src="https://github.com/user-attachments/assets/2e2246e8-6483-4429-a8ee-6bf6318a14d9" />
 
