@@ -221,10 +221,8 @@ hostname -I
 
 Accessed the services from the browser:
 
-http://<dockerlab-ip>:8080
-http://<dockerlab-ip>:8081
-
-<img width="1198" height="69" alt="Screenshot 2026-05-16 193306" src="https://github.com/user-attachments/assets/91d148ed-6aca-4efd-b711-295b45734dfd" />
+* http://<dockerlab-ip>:8080
+* http://<dockerlab-ip>:8081
 
 
 The Nginx welcome page loaded successfully, and the whoami container returned container and networking information correctly.
