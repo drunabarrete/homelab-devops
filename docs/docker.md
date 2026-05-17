@@ -166,7 +166,6 @@ Created a directory for Docker projects:
 ```bash
 mkdir ~/homelab
 cd ~/homelab
-Creating docker-compose.yml
 ```
 
 Created the compose file:
@@ -174,6 +173,7 @@ Created the compose file:
 ```bash
 vim docker-compose.yml
 ```
+
 ```bash
 services:
   nginx:
@@ -191,8 +191,9 @@ services:
 
 This stack deploys:
 
-An Nginx web server
-A lightweight container that displays networking and request information for testing
+*An Nginx web server
+*A lightweight container that displays networking and request information for testing
+
 Deploying the Stack
 
 Started the containers with:
@@ -210,7 +211,9 @@ Testing Access
 
 Retrieved the container IP address:
 
+```bash
 hostname -I
+```
 
 Accessed the services from the browser:
 
