@@ -224,8 +224,8 @@ Accessed the services from the browser:
 http://<dockerlab-ip>:8080
 http://<dockerlab-ip>:8081
 
-<img width="647" height="341" alt="Screenshot 2026-05-16 184129" src="https://github.com/user-attachments/assets/810deedb-4c1e-4901-9293-0bd5357cef4b" />
-<img width="691" height="298" alt="Screenshot 2026-05-16 184138" src="https://github.com/user-attachments/assets/7c491618-2745-4a0c-8840-460c975eda9d" />
+<img width="1198" height="69" alt="Screenshot 2026-05-16 193306" src="https://github.com/user-attachments/assets/91d148ed-6aca-4efd-b711-295b45734dfd" />
+
 
 The Nginx welcome page loaded successfully, and the whoami container returned container and networking information correctly.
 ---
