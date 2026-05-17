@@ -86,8 +86,7 @@ Inside the container:
 apt update && apt upgrade -y
 ```
 
-After all packages were properly upgraded via the proxmox host shell, I was able to access dockerlab's shell from its own console.<img width="1244" height="110" alt="Screenshot 2026-05-16 193251" src="https://github.com/user-attachments/assets/6c8a450c-72e9-4ca2-acf6-3cf5c149d5c1" />
-<img width="1198" height="69" alt="Screenshot 2026-05-16 193306" src="https://github.com/user-attachments/assets/83c7f06d-e520-40a4-b709-545f977a7c5a" />
+After all packages were properly upgraded via the proxmox host shell, I was able to access dockerlab's shell from its own console.
 
 
 ---
@@ -136,6 +135,8 @@ http://<dockerlab-ip>:8080
 
 Successfully reached the Nginx welcome page.
 
+<img width="691" height="298" alt="Screenshot 2026-05-16 184138" src="https://github.com/user-attachments/assets/2c912983-c44f-4be2-a2ac-67872e7b2ab7" />
+
 This confirmed:
 
 * Docker was functioning correctly
@@ -158,7 +159,68 @@ Verified installation:
 ```bash
 docker compose version
 ```
+# Using Docker Compose
 
+Created a directory for Docker projects:
+
+```bash
+mkdir ~/homelab
+cd ~/homelab
+Creating docker-compose.yml
+```
+
+Created the compose file:
+
+```bash
+vim docker-compose.yml
+```
+```bash
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+  whoami:
+    image: traefik/whoami
+    ports:
+      - "8081:80"
+    restart: unless-stopped
+```
+
+This stack deploys:
+
+An Nginx web server
+A lightweight container that displays networking and request information for testing
+Deploying the Stack
+
+Started the containers with:
+
+docker compose up -d
+
+Verified containers were running:
+
+docker ps
+
+<img width="1198" height="69" alt="Screenshot 2026-05-16 193306" src="https://github.com/user-attachments/assets/2e2246e8-6483-4429-a8ee-6bf6318a14d9" />
+
+
+Testing Access
+
+Retrieved the container IP address:
+
+hostname -I
+
+Accessed the services from the browser:
+
+http://<dockerlab-ip>:8080
+http://<dockerlab-ip>:8081
+
+<img width="647" height="341" alt="Screenshot 2026-05-16 184129" src="https://github.com/user-attachments/assets/810deedb-4c1e-4901-9293-0bd5357cef4b" />
+<img width="691" height="298" alt="Screenshot 2026-05-16 184138" src="https://github.com/user-attachments/assets/7c491618-2745-4a0c-8840-460c975eda9d" />
+
+The Nginx welcome page loaded successfully, and the whoami container returned container and networking information correctly.
 ---
 
 # Current Status
